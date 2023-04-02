@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class PriceCard(models.Model):
     pc_value = models.CharField(max_length=20, verbose_name='Цена')
     pc_description = models.CharField(max_length=200, verbose_name='Описание')
@@ -23,4 +24,3 @@ class PriceTable(models.Model):
     class Meta:
         verbose_name = 'Услугу'
         verbose_name_plural = 'Услуги'
-
